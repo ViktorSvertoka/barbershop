@@ -11,8 +11,9 @@ font-family: 'Raleway', sans-serif; */
 
 body {
   font-family: 'Open Sans', 'Raleway', sans-serif;
-  letter-spacing: 0.1em;
 }
+
+/* <-----------utils-----------> */
 
 .link {
   text-decoration: none;
@@ -21,6 +22,7 @@ body {
 .list {
   list-style: none;
 }
+
 /* <-----------header-----------> */
 
 .header {
