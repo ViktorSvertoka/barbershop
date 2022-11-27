@@ -11,6 +11,7 @@ font-family: 'Raleway', sans-serif; */
 
 body {
   font-family: 'Open Sans', 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .link {
@@ -30,7 +31,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
@@ -43,7 +43,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -53,7 +52,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
   border: 1px solid #ff6c00;
@@ -84,7 +82,6 @@ body {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
   color: #ffffff;
 
   background-color: dimgray;
@@ -94,7 +91,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  letter-spacing: 0.02em;
   color: #9da4bd;
 }
 
@@ -105,7 +101,6 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.2em;
   color: #303030;
 }
 
@@ -131,7 +126,6 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  letter-spacing: 0.05em;
   color: #303030;
 }
 
@@ -139,7 +133,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  letter-spacing: 0.02em;
   color: #555555;
 }
 
@@ -147,7 +140,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
-  letter-spacing: 0.02em;
   color: #555555;
 }
 
@@ -156,7 +148,6 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #303030;
   border: 1px solid #ff6c00;
@@ -194,11 +185,19 @@ body {
 }
 
 .services-price {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
   text-align: right;
   color: #9da4bd;
+}
+
+.services-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
 }
