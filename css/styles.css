@@ -299,9 +299,95 @@ body {
   text-transform: uppercase;
   color: #303030;
 }
+
 .works-list {
 }
+
 .works-item {
 }
+
 .works-img {
+}
+
+/* <-----------booking-----------> */
+
+.booking-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: #ffffff;
+}
+
+/* <-----------contacts-----------> */
+
+.contacts-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: #ffffff;
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+}
+
+.contacts-address {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.66;
+  color: #9da4bd;
+}
+
+.contacts-tel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  color: #9da4bd;
+}
+
+.contacts-mail {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  text-decoration-line: underline;
+  color: #9da4bd;
+}
+
+.contacts-after-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contacts-working-hours {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  color: #9da4bd;
+}
+
+/* <-----------footer-----------> */
+
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #9da4bd;
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #303030;
 }
