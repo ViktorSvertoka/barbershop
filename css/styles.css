@@ -289,3 +289,19 @@ body {
   text-align: center;
   color: #ff6c00;
 }
+
+/* <-----------works-----------> */
+
+.works-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
+}
+.works-list {
+}
+.works-item {
+}
+.works-img {
+}
