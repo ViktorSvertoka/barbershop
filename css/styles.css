@@ -253,16 +253,39 @@ body {
 /* <-----------barbers-----------> */
 
 .barbers-pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
 }
+
 .barbers-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: #303030;
 }
+
 .barbers-list {
 }
 .barbers-item {
 }
 .barbers-img {
 }
+
 .barbers-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  color: #303030;
 }
+
 .barbers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  color: #ff6c00;
 }
