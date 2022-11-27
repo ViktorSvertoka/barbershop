@@ -243,9 +243,26 @@ body {
   color: #303030;
 }
 
-.traditionals-main-text {
+.traditionals-after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
   color: #555555;
+}
+
+/* <-----------barbers-----------> */
+
+.barbers-pre-title {
+}
+.barbers-title {
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-img {
+}
+.barbers-name {
+}
+.barbers-text {
 }
