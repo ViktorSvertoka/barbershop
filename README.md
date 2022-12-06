@@ -20,3 +20,7 @@ class - .header-btn (через точку)
 с падингами)
 
 ---
+
+атрибут на ссылки против фишинга rel="noopener noreferrer nofollow"
+
+---
