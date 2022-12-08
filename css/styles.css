@@ -33,6 +33,7 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
@@ -46,6 +47,7 @@ body {
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 
@@ -55,6 +57,7 @@ body {
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
+  letter-spacing: 0.09em;
   color: #ffffff;
   border: 1px solid #ff6c00;
   border-radius: 25px;
@@ -85,6 +88,7 @@ body {
   font-size: 72px;
   line-height: 1.18;
   color: #ffffff;
+  letter-spacing: 0.05em;
 
   background-color: dimgray;
 }
@@ -94,6 +98,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 .hero-list {
@@ -104,6 +109,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   color: #303030;
+  letter-spacing: 0.2em;
 }
 
 .hero-link:hover,
@@ -129,6 +135,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   color: #303030;
+  letter-spacing: 0.05em;
 }
 
 .about-after-title {
@@ -136,6 +143,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #555555;
+  letter-spacing: 0.02em;
 }
 
 .about-text {
@@ -143,6 +151,7 @@ body {
   font-size: 14px;
   line-height: 1.85;
   color: #555555;
+  letter-spacing: 0.02em;
 }
 
 .about-btn {
@@ -154,6 +163,7 @@ body {
   color: #303030;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  letter-spacing: 0.09em;
 }
 
 .about-btn:hover,
@@ -177,6 +187,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   color: #ffffff;
+  letter-spacing: 0.05em;
 }
 
 .services-text {
@@ -184,6 +195,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 .services-price {
@@ -192,6 +204,7 @@ body {
   line-height: 1.66;
   text-align: right;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 .services-button {
@@ -202,6 +215,7 @@ body {
   color: #ffffff;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  letter-spacing: 0.09em;
 }
 
 /* <-----------traditionals-----------> */
@@ -212,6 +226,7 @@ body {
   line-height: 1.35;
   text-align: center;
   color: #303030;
+  letter-spacing: 0.05em;
 }
 
 .traditionals-symbols {
@@ -243,6 +258,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   color: #303030;
+  letter-spacing: 0.05em;
 }
 
 .traditionals-after-title {
@@ -250,6 +266,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #555555;
+  letter-spacing: 0.02em;
 }
 
 /* <-----------barbers-----------> */
@@ -267,6 +284,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   color: #303030;
+  letter-spacing: 0.05em;
 }
 
 .barbers-list {
@@ -282,6 +300,7 @@ body {
   line-height: 1.38;
   text-align: center;
   color: #303030;
+  letter-spacing: 0.02em;
 }
 
 .barbers-text {
@@ -290,6 +309,7 @@ body {
   line-height: 1.35;
   text-align: center;
   color: #ff6c00;
+  letter-spacing: 0.02em;
 }
 
 /* <-----------works-----------> */
@@ -318,6 +338,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   color: #ffffff;
+  letter-spacing: 0.05em;
 }
 
 /* <-----------contacts-----------> */
@@ -327,6 +348,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   color: #ffffff;
+  letter-spacing: 0.05em;
 }
 
 .contacts-list {
@@ -340,6 +362,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 .contacts-tel {
@@ -347,6 +370,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 .contacts-mail {
@@ -355,6 +379,7 @@ body {
   line-height: 1.66;
   text-decoration-line: underline;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 .contacts-after-title {
@@ -370,6 +395,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   color: #9da4bd;
+  letter-spacing: 0.02em;
 }
 
 /* <-----------footer-----------> */
@@ -379,6 +405,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   color: #9da4bd;
+  letter-spacing: 0.2em;
 }
 
 .footer-list {
@@ -392,4 +419,5 @@ body {
   font-size: 11px;
   line-height: 1.36;
   color: #303030;
+  letter-spacing: 0.2em;
 }
