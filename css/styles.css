@@ -7,6 +7,8 @@ font-family: 'Raleway', sans-serif; */
   --primary-color: #303030;
   --second-color: #ffffff;
   --accent-color: #ff6c00;
+  --text-primary-color: #555555;
+  --text-second-color: #9da4bd;
 }
 
 body {
@@ -34,12 +36,12 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--second-color);
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .header-tel {
@@ -48,7 +50,7 @@ body {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--second-color);
 }
 
 .header-btn {
@@ -58,14 +60,14 @@ body {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  color: #ffffff;
-  border: 1px solid #ff6c00;
+  color: var(--second-color);
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
 }
 
 .header-btn:hover,
 .header-btn:focus {
-  background: #ff6c00;
+  background: var(--accent-color);
 }
 
 /* <-----------main-----------> */
@@ -87,7 +89,7 @@ body {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
-  color: #ffffff;
+  color: var(--second-color);
   letter-spacing: 0.05em;
 
   background-color: dimgray;
@@ -97,7 +99,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -108,13 +110,13 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.2em;
 }
 
 .hero-link:hover,
 .hero-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 /* <-----------about-----------> */
@@ -127,14 +129,14 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #303030;
+  color: var(--primary-color);
 }
 
 .about-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.05em;
 }
 
@@ -142,7 +144,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: #555555;
+  color: var(--text-primary-color);
   letter-spacing: 0.02em;
 }
 
@@ -150,7 +152,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
-  color: #555555;
+  color: var(--text-primary-color);
   letter-spacing: 0.02em;
 }
 
@@ -160,16 +162,16 @@ body {
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
-  color: #303030;
-  border: 1px solid #ff6c00;
+  color: var(--primary-color);
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
   letter-spacing: 0.09em;
 }
 
 .about-btn:hover,
 .about-btn:focus {
-  color: #ffffff;
-  background: #ff6c00;
+  color: var(--second-color);
+  background: var(--accent-color);
 }
 
 /* <-----------services and prices-----------> */
@@ -186,7 +188,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: #ffffff;
+  color: var(--second-color);
   letter-spacing: 0.05em;
 }
 
@@ -194,7 +196,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -203,7 +205,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   text-align: right;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -212,8 +214,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
-  color: #ffffff;
-  border: 1px solid #ff6c00;
+  color: var(--second-color);
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
   letter-spacing: 0.09em;
 }
@@ -225,7 +227,7 @@ body {
   font-size: 42px;
   line-height: 1.35;
   text-align: center;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.05em;
 }
 
@@ -234,7 +236,7 @@ body {
   font-size: 16px;
   line-height: 1.37;
   text-align: center;
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .traditionals-text {
@@ -242,7 +244,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
-  color: #303030;
+  color: var(--primary-color);
 }
 
 .traditionals-pre-title {
@@ -250,14 +252,14 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #303030;
+  color: var(--primary-color);
 }
 
 .traditionals-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.05em;
 }
 
@@ -265,7 +267,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: #555555;
+  color: var(--text-primary-color);
   letter-spacing: 0.02em;
 }
 
@@ -276,14 +278,14 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #303030;
+  color: var(--primary-color);
 }
 
 .barbers-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.05em;
 }
 
@@ -299,7 +301,7 @@ body {
   font-size: 18px;
   line-height: 1.38;
   text-align: center;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.02em;
 }
 
@@ -308,7 +310,7 @@ body {
   font-size: 14px;
   line-height: 1.35;
   text-align: center;
-  color: #ff6c00;
+  color: var(--accent-color);
   letter-spacing: 0.02em;
 }
 
@@ -319,7 +321,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #303030;
+  color: var(--primary-color);
 }
 
 .works-list {
@@ -337,7 +339,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: #ffffff;
+  color: var(--second-color);
   letter-spacing: 0.05em;
 }
 
@@ -347,7 +349,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: #ffffff;
+  color: var(--second-color);
   letter-spacing: 0.05em;
 }
 
@@ -361,7 +363,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.66;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -369,7 +371,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -378,7 +380,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   text-decoration-line: underline;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -387,14 +389,14 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--second-color);
 }
 
 .contacts-working-hours {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
@@ -404,7 +406,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: #9da4bd;
+  color: var(--text-second-color);
   letter-spacing: 0.2em;
 }
 
@@ -418,6 +420,11 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: #303030;
+  color: var(--primary-color);
   letter-spacing: 0.2em;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
