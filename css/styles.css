@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Шрифты макета */
 
 /* font-family: 'Open Sans', sans-serif;
@@ -316,6 +320,20 @@ body {
 
 /* <-----------works-----------> */
 
+.works-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .works-text {
   font-weight: 600;
   font-size: 11px;
@@ -357,6 +375,7 @@ body {
 }
 
 .contacts-item {
+  font-style: normal;
 }
 
 .contacts-address {
