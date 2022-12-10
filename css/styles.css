@@ -15,8 +15,37 @@ font-family: 'Raleway', sans-serif; */
   --text-second-color: #9da4bd;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: 'Open Sans', 'Raleway', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
 }
 
 /* <-----------utils-----------> */
@@ -33,6 +62,11 @@ body {
 
 .header {
   background-color: dimgray;
+}
+
+.header-logo {
+  padding: 32px 0px;
+  display: block;
 }
 
 .header-link {
@@ -81,20 +115,26 @@ body {
 .hero {
 }
 
-.sub-title {
+.hero-right {
+  padding: 184px 526px 208px 100px;
+}
+
+.hero-pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
-.title {
+.hero-title {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   color: var(--second-color);
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 
   background-color: dimgray;
 }
@@ -105,6 +145,7 @@ body {
   line-height: 1.66;
   color: var(--text-second-color);
   letter-spacing: 0.02em;
+  max-width: 370px;
 }
 
 .hero-list {
@@ -126,6 +167,7 @@ body {
 /* <-----------about-----------> */
 
 .about {
+  padding: 120px 0px;
 }
 
 .about-pre-title {
@@ -134,6 +176,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 .about-title {
@@ -142,6 +185,7 @@ body {
   line-height: 1.16;
   color: var(--primary-color);
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 .about-after-title {
@@ -150,6 +194,7 @@ body {
   line-height: 1.66;
   color: var(--text-primary-color);
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -158,6 +203,7 @@ body {
   line-height: 1.85;
   color: var(--text-primary-color);
   letter-spacing: 0.02em;
+  margin-bottom: 42px;
 }
 
 .about-btn {
@@ -180,40 +226,48 @@ body {
 
 /* <-----------services and prices-----------> */
 
-.services-pre-title {
+.prices {
+  padding: 120px 0px;
+}
+
+.prices-pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
-.services-title {
+.prices-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
+  margin-bottom: 44px;
 }
 
-.services-text {
+.prices-list {
+  border: solid tomato;
+
+  padding: 30px 20px;
+}
+
+.prices-item {
+  margin-bottom: 20px;
+}
+
+.prices-elem {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
+  /* text-align: right; */
   color: var(--text-second-color);
   letter-spacing: 0.02em;
 }
 
-.services-price {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.66;
-  text-align: right;
-  color: var(--text-second-color);
-  letter-spacing: 0.02em;
-}
-
-.services-button {
+.prices-button {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -222,20 +276,37 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   letter-spacing: 0.09em;
+
+  margin: 0px auto;
+  display: block;
+  margin-top: 44px;
 }
 
 /* <-----------traditionals-----------> */
 
-.traditionals-numbers {
+.benefits {
+  padding: 120px 0px;
+}
+
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+
+  background: #f7f7f7;
+}
+
+.benefits-numbers {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
   text-align: center;
   color: var(--primary-color);
   letter-spacing: 0.05em;
+  display: inline-block;
 }
 
-.traditionals-symbols {
+.benefits-symbols {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.37;
@@ -243,7 +314,7 @@ body {
   color: var(--accent-color);
 }
 
-.traditionals-text {
+.benefits-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -251,23 +322,25 @@ body {
   color: var(--primary-color);
 }
 
-.traditionals-pre-title {
+.benefits-pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
-.traditionals-title {
+.benefits-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
   color: var(--primary-color);
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
-.traditionals-after-title {
+.benefits-after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -277,12 +350,17 @@ body {
 
 /* <-----------barbers-----------> */
 
+.barbers {
+  padding: 120px 0px;
+}
+
 .barbers-pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 .barbers-title {
@@ -291,6 +369,7 @@ body {
   line-height: 1.16;
   color: var(--primary-color);
   letter-spacing: 0.05em;
+  margin-bottom: 44px;
 }
 
 .barbers-list {
@@ -304,23 +383,29 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.38;
-  text-align: center;
+  /* text-align: center; */
   color: var(--primary-color);
   letter-spacing: 0.02em;
+  margin-top: 30px;
+  margin-bottom: 8px;
 }
 
 .barbers-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
-  text-align: center;
+  /* text-align: center; */
   color: var(--accent-color);
   letter-spacing: 0.02em;
 }
 
 /* <-----------works-----------> */
 
-.works-visually-hidden {
+.gallery {
+  padding-left: 120px 0px;
+}
+
+.gallery-visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -334,21 +419,22 @@ body {
   overflow: hidden;
 }
 
-.works-text {
+.gallery-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 44px;
 }
 
-.works-list {
+.gallery-list {
 }
 
-.works-item {
+.gallery-item {
 }
 
-.works-img {
+.gallery-img {
 }
 
 /* <-----------booking-----------> */
@@ -359,6 +445,8 @@ body {
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
+
+  background-color: #555555;
 }
 
 /* <-----------contacts-----------> */
@@ -369,6 +457,8 @@ body {
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
+
+  background-color: #555555;
 }
 
 .contacts-list {
