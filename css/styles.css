@@ -32,6 +32,7 @@ ul {
 
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 
 img {
@@ -64,10 +65,37 @@ body {
   background-color: dimgray;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+/* можно еще так */
+
+/* header .container {
+  display: flex;
+  align-items: center;
+} */
+
 .header-logo {
   padding: 32px 0px;
   display: block;
+  margin-right: 130px;
 }
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* можно еще так */
+
+/* .header-list li + li {
+  margin-left: 30px;
+} */
 
 .header-link {
   font-weight: 600;
@@ -80,6 +108,10 @@ body {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-contact {
+  margin-left: auto;
 }
 
 .header-tel {
@@ -101,6 +133,9 @@ body {
   color: var(--second-color);
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  margin-left: 40px;
+  min-width: 160px;
+  height: 40px;
 }
 
 .header-btn:hover,
@@ -115,8 +150,13 @@ body {
 .hero {
 }
 
+.hero-container {
+  display: flex;
+}
+
 .hero-right {
   padding: 184px 526px 208px 100px;
+  flex-grow: 1;
 }
 
 .hero-pre-title {
@@ -149,6 +189,7 @@ body {
 }
 
 .hero-list {
+  width: 100px;
 }
 
 .hero-link {
@@ -168,6 +209,22 @@ body {
 
 .about {
   padding: 120px 0px;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-wrap {
+  margin-left: 30px;
 }
 
 .about-pre-title {
@@ -216,6 +273,8 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   letter-spacing: 0.09em;
+  min-width: 160px;
+  height: 40px;
 }
 
 .about-btn:hover,
@@ -246,6 +305,9 @@ body {
   color: var(--second-color);
   letter-spacing: 0.05em;
   margin-bottom: 44px;
+}
+
+.prices-list-wrap {
 }
 
 .prices-list {
