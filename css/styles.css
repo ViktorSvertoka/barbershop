@@ -524,12 +524,25 @@ body {
   /* text-align: center; */
   color: var(--accent-color);
   letter-spacing: 0.02em;
+  margin-bottom: 30px;
 }
 
 .barbers-soc-list {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.barbers-soc-items {
+  width: 44px;
+  height: 44px;
+}
+
+.barber-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #ffffff;
 }
 
 /* <-----------works-----------> */
