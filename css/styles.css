@@ -59,6 +59,20 @@ body {
   list-style: none;
 }
 
+.pre-title {
+  display: flex;
+  align-items: center;
+}
+
+.pre-title::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  display: block;
+  background: currentColor;
+  margin-right: 20px;
+}
+
 /* <-----------header-----------> */
 
 .header {
@@ -348,10 +362,20 @@ body {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .prices-item:last-child {
   margin-bottom: 0px;
+}
+
+.prices-item::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  margin: 0px 12px;
 }
 
 .prices-elem {
@@ -361,6 +385,10 @@ body {
   /* text-align: right; */
   color: var(--text-second-color);
   letter-spacing: 0.02em;
+}
+
+.prices-elem:last-child {
+  order: 1;
 }
 
 .prices-button {
@@ -516,6 +544,7 @@ body {
   letter-spacing: 0.02em;
   margin-top: 30px;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .barbers-text {
@@ -526,6 +555,7 @@ body {
   color: var(--accent-color);
   letter-spacing: 0.02em;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .barbers-soc-list {
@@ -614,7 +644,28 @@ body {
 .gallery-img {
 }
 
+/* <-----------contact-wrap-----------> */
+
+.contacts-wrap {
+  display: flex;
+  background: #191c26;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: calc(50% - 15px);
+}
+
+.container-contacts {
+  display: flex;
+}
+
 /* <-----------booking-----------> */
+
+.form {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
 
 .form-title {
   font-weight: 700;
@@ -622,11 +673,15 @@ body {
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
-
-  background-color: #555555;
 }
 
 /* <-----------contacts-----------> */
+
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+}
 
 .contacts-title {
   font-weight: 700;
@@ -634,8 +689,6 @@ body {
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
-
-  background-color: #555555;
 }
 
 .contacts-list {
