@@ -43,31 +43,35 @@
           <a href="tel:+380441111111" class="header-tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn">Online-booking</button>
+          <button type="button" class="header-btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item item">
-              <a
-                href=""
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item item">
-              <a
-                href=""
-                rel="noopener noreferrer nofollow"
-                class="hero-link link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li class="hero-item item">
+                <a
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item item">
+                <a
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                  class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-right">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title title">BarberShop</h1>
@@ -201,12 +205,21 @@
           <h2 class="barbers-title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-item item">
-              <img
-                class="barbers-img"
-                src="./images/barber1.jpg"
-                alt="our barbers"
-                width="370"
-              />
+              <div class="barbers-thumb">
+                <img
+                  class="barbers-img"
+                  src="./images/barber1.jpg"
+                  alt="our barbers"
+                  width="370"
+                />
+                <p class="barbers-cover-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Maxime quas magnam quis excepturi! Distinctio at temporibus
+                  quas repellendus suscipit labore fugit quisquam neque tempora
+                  voluptate praesentium asperiores voluptatum, perferendis
+                  quaerat rerum, corporis qui!
+                </p>
+              </div>
               <h3 class="barbers-name">John Smith</h3>
               <p class="barbers-text">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -422,5 +435,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal is-hidden>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="20" height="20" class="">
+            <use href="./images/modal.svg#icon-modal-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
