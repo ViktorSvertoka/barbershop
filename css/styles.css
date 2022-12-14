@@ -496,6 +496,7 @@ body {
   color: var(--primary-color);
   letter-spacing: 0.05em;
   margin-bottom: 20px;
+  padding-right: 70px;
 }
 
 .benefits-after-title {
@@ -706,6 +707,7 @@ body {
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
+  margin-bottom: 40px;
 }
 
 .contacts-list {
@@ -713,6 +715,11 @@ body {
 
 .contacts-item {
   font-style: normal;
+  margin-bottom: 20px;
+}
+
+.contacts-item:last-child {
+  margin-bottom: 0px;
 }
 
 .contacts-address {
@@ -746,6 +753,8 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--second-color);
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
 .contacts-working-hours {
