@@ -878,7 +878,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
   width: 500px;
   min-height: 600px;
   background-color: #ffffff;
@@ -887,7 +887,7 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50% -50%) scale(1);
+  transform: translate(-50% -50%) scale(0.5);
 }
 
 .modal-close {
@@ -908,4 +908,13 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #090b13;
+  text-align: center;
+  margin-bottom: 20px;
 }
