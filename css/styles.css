@@ -865,6 +865,8 @@ body {
   color: var(--accent-color);
 }
 
+/* <-----------modal window-----------> */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -917,4 +919,7 @@ body {
   color: #090b13;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.modal-input {
 }
