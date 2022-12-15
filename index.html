@@ -444,9 +444,31 @@
         </button>
         <p class="modal-title">Contact Us</p>
         <form action="">
-          <input type="text" class="modal-input" placeholder="tape name" />
-          <input type="text" class="modal-input" placeholder="tape name" />
-          <input type="text" class="modal-input" placeholder="tape name" />
+          <label for="">Name</label>
+          <input
+            type="text"
+            class="modal-input"
+            placeholder="tape name"
+            name="name"
+            required
+          />
+
+          <input
+            type="tel"
+            class="modal-input"
+            placeholder="tape phone number"
+            name="phone number"
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            title="+380 (93) 111-66-77"
+            value="+380"
+          />
+          <input
+            type="email"
+            class="modal-input"
+            placeholder="tape email"
+            name="email"
+          />
+          <button type="submit" class="modal-btn-submit">Send</button>
         </form>
       </div>
     </div>
