@@ -876,6 +876,10 @@ body {
   transition: opacity 300ms linear, visibility 300ms linear;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50% -50%) scale(0.5);
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -886,10 +890,7 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 40px;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50% -50%) scale(0.5);
+  transition: transform 500ms;
 }
 
 .modal-close {
@@ -906,7 +907,7 @@ body {
   justify-content: center;
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
