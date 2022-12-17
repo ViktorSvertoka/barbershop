@@ -464,6 +464,7 @@
               pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
               title="+380 (93) 111-66-77"
               value="+380"
+              required
             />
           </div>
           <div class="modal-wrap">
@@ -473,8 +474,35 @@
               class="modal-input"
               placeholder="enter email"
               name="email"
+              required
             />
           </div>
+          <fieldset>
+            <legend>Who will shave?</legend>
+            <input type="radio" name="shave" id="dad" value="dad" checked />
+            <label for="dad">Dad</label>
+            <input type="radio" name="shave" id="son" value="son" />
+            <label for="son">Son</label>
+          </fieldset>
+          <fieldset>
+            <legend>Select tool</legend>
+            <input type="checkbox" name="tool" id="scissors" value="scissors" />
+            <label for="scissors">Scissors</label>
+            <input
+              type="checkbox"
+              name="tool"
+              id="hair trimmer"
+              value="hair trimmer"
+            />
+            <label for="hair trimmer">Hair trimmer</label>
+            <input
+              type="checkbox"
+              name="tool"
+              id="razor blade"
+              value="razor blade"
+            />
+            <label for="razor blade">Razor blade</label>
+          </fieldset>
           <div class="modal-wrap">
             <label for="">Text</label>
             <textarea

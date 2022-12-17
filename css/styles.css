@@ -946,9 +946,21 @@ body {
   font-weight: 700;
 }
 
-/* .modal-input:required {
+.modal-input:required {
   border-color: #ff6c00;
-} */
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+input[type='radio']:checked + label {
+  color: #ff6c00;
+}
 
 .modal-text {
   width: 100%;
