@@ -931,7 +931,7 @@ body {
   width: 100%;
   height: 40px;
   padding-left: 40px;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -960,6 +960,18 @@ body {
 
 input[type='radio']:checked + label {
   color: #ff6c00;
+}
+
+.modal-input-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 .modal-text {

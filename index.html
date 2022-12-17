@@ -446,36 +446,51 @@
         <form action="">
           <div class="modal-wrap">
             <label for="">Name</label>
-            <input
-              type="text"
-              class="modal-input"
-              placeholder="enter name"
-              name="name"
-              required
-            />
+            <div class="modal-input-wrapper">
+              <input
+                type="text"
+                class="modal-input"
+                placeholder="enter name"
+                name="name"
+                required
+              />
+              <svg width="18" height="18" class="modal-input-icon">
+                <use href="./images/modal.svg#icon-modal-face"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-wrap">
             <label for="">Tel</label>
-            <input
-              type="tel"
-              class="modal-input"
-              placeholder="enter phone number"
-              name="phone number"
-              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-              title="+380 (93) 111-66-77"
-              value="+380"
-              required
-            />
+            <div class="modal-input-wrapper">
+              <input
+                type="tel"
+                class="modal-input"
+                placeholder="enter phone number"
+                name="phone number"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                title="+380 (93) 111-66-77"
+                value="+380"
+                required
+              />
+              <svg width="18" height="18" class="modal-input-icon">
+                <use href="./images/modal.svg#icon-modal-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-wrap">
             <label for="">Email</label>
-            <input
-              type="email"
-              class="modal-input"
-              placeholder="enter email"
-              name="email"
-              required
-            />
+            <div class="modal-input-wrapper">
+              <input
+                type="email"
+                class="modal-input"
+                placeholder="enter email"
+                name="email"
+                required
+              />
+              <svg width="18" height="18" class="modal-input-icon">
+                <use href="./images/modal.svg#icon-modal-mail"></use>
+              </svg>
+            </div>
           </div>
           <fieldset>
             <legend>Who will shave?</legend>
