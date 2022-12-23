@@ -712,8 +712,8 @@ body {
   background: #191c26;
   background-image: url(../images/contacts-bg.png);
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: calc(50% - 15px);
+  background-position: center right calc(50% - 15px - 392px);
+  background-size: auto 100%;
 }
 
 .container-contacts {
@@ -734,6 +734,67 @@ body {
   line-height: 1.16;
   color: var(--second-color);
   letter-spacing: 0.05em;
+  margin-bottom: 44px;
+}
+
+.form-input-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: rgba(157, 164, 189, 0.4);
+  margin-bottom: 44px;
+  cursor: pointer;
+  transition: border-bottom-color 500ms linear;
+}
+
+.form-input-item::placeholder {
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: color 500ms linear;
+}
+
+.form-input-item:focus,
+.form-input-item:hover {
+  outline: transparent;
+  border-bottom-color: #ffffff;
+}
+
+.form-input-item:focus::placeholder,
+.form-input-item:hover::placeholder {
+  color: #ffffff;
+}
+
+.form-input-contact {
+  width: 270px;
+  height: 24px;
+}
+
+.form-input-contact:first-child {
+  margin-right: 30px;
+}
+
+.form-textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+}
+
+.form-btn {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* <-----------contacts-----------> */
@@ -886,7 +947,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 500px;
-  min-height: 600px;
+  height: 700px;
   background-color: #ffffff;
   border-radius: 5px;
   padding: 35px;
@@ -919,7 +980,7 @@ body {
   line-height: 1.5;
   color: #090b13;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal-wrap label {
@@ -947,7 +1008,18 @@ body {
 }
 
 .modal-input:required {
+  border-color: gray;
+}
+
+.modal-input:focus,
+.modal-input:hover {
   border-color: #ff6c00;
+  outline: transparent;
+}
+
+.modal-input:focus + svg,
+.modal-input:hover + svg {
+  fill: #ff6c00;
 }
 
 .modal-input:not(:focus):not(:placeholder-shown):valid {
@@ -976,7 +1048,7 @@ input[type='radio']:checked + label {
 
 .modal-text {
   width: 100%;
-  height: 120px;
+  height: 80px;
   max-height: 250px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
