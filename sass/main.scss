@@ -7,13 +7,16 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
-:root {
-  --primary-color: #303030;
-  --second-color: #ffffff;
-  --accent-color: #ff6c00;
-  --text-primary-color: #555555;
-  --text-second-color: #9da4bd;
-}
+$primary-color: #303030;
+$second-color: #ffffff;
+$accent-color: #ff6c00;
+$text-primary-color: #555555;
+$text-second-color: #9da4bd;
+$white-bg-color: #f7f7f7;
+$black-bg-color: #111319;
+
+$primary-fonts: 'Open Sans';
+$accent-fonts: 'Raleway';
 
 p,
 h1,
@@ -117,12 +120,12 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  color: var(--second-color);
+  color: $second-color;
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .header-contact {
@@ -135,7 +138,7 @@ body {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--second-color);
+  color: $second-color;
 }
 
 .header-btn {
@@ -145,8 +148,8 @@ body {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  color: var(--second-color);
-  border: 1px solid var(--accent-color);
+  color: $second-color;
+  border: 1px solid $accent-color;
   border-radius: 25px;
   margin-left: 40px;
   min-width: 160px;
@@ -155,7 +158,7 @@ body {
 
 .header-btn:hover,
 .header-btn:focus {
-  background: var(--accent-color);
+  background: $accent-color;
 }
 
 /* <-----------main-----------> */
@@ -196,13 +199,13 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.2em;
 }
 
 .hero-link:hover,
 .hero-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .hero-right {
@@ -216,7 +219,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -233,7 +236,7 @@ body {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
-  color: var(--second-color);
+  color: $second-color;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
 }
@@ -242,7 +245,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.02em;
   max-width: 370px;
 }
@@ -274,7 +277,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: $primary-color;
   margin-bottom: 20px;
 }
 
@@ -282,7 +285,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
 }
@@ -291,7 +294,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: var(--text-primary-color);
+  color: $text-primary-color;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
@@ -300,7 +303,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
-  color: var(--text-primary-color);
+  color: $text-primary-color;
   letter-spacing: 0.02em;
   margin-bottom: 42px;
 }
@@ -311,8 +314,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
-  color: var(--primary-color);
-  border: 1px solid var(--accent-color);
+  color: $primary-color;
+  border: 1px solid $accent-color;
   border-radius: 25px;
   letter-spacing: 0.09em;
   min-width: 160px;
@@ -321,8 +324,8 @@ body {
 
 .about-btn:hover,
 .about-btn:focus {
-  color: var(--second-color);
-  background: var(--accent-color);
+  color: $second-color;
+  background: $accent-color;
 }
 
 /* <-----------services and prices-----------> */
@@ -331,7 +334,7 @@ body {
   padding: 120px 0px;
 
   background-image: url(../images/prices-bg.png);
-  background-color: #111319;
+  background-color: $black-bg-color;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -352,7 +355,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: var(--second-color);
+  color: $second-color;
   letter-spacing: 0.05em;
   margin-bottom: 44px;
 }
@@ -403,7 +406,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   /* text-align: right; */
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.02em;
 }
 
@@ -416,8 +419,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
-  color: var(--second-color);
-  border: 1px solid var(--accent-color);
+  color: $second-color;
+  border: 1px solid $accent-color;
   border-radius: 25px;
   letter-spacing: 0.09em;
 
@@ -455,7 +458,7 @@ body {
   padding: 20px 24px;
   text-align: center;
 
-  background: #f7f7f7;
+  background: $white-bg-color;
 }
 
 .benefits-item:nth-child(2n + 1) {
@@ -471,7 +474,7 @@ body {
   font-size: 42px;
   line-height: 1.35;
   text-align: center;
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.05em;
   display: flex;
   justify-content: center;
@@ -483,7 +486,7 @@ body {
   font-size: 16px;
   line-height: 1.37;
   text-align: center;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .benefits-text {
@@ -491,7 +494,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .benefits-wrap {
@@ -505,7 +508,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: $primary-color;
   margin-bottom: 20px;
 }
 
@@ -513,7 +516,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
   padding-right: 70px;
@@ -523,7 +526,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: var(--text-primary-color);
+  color: $text-primary-color;
   letter-spacing: 0.02em;
 }
 
@@ -531,7 +534,7 @@ body {
 
 .barbers {
   padding: 120px 0px;
-  background-color: #f7f7f7;
+  background-color: $white-bg-color;
 }
 
 .barbers-pre-title {
@@ -539,7 +542,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: $primary-color;
   margin-bottom: 20px;
 }
 
@@ -547,7 +550,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.05em;
   margin-bottom: 44px;
 }
@@ -585,7 +588,7 @@ body {
 .barbers-cover-text {
   position: absolute;
   top: 0;
-  color: #ffffff;
+  color: $second-color;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
@@ -601,7 +604,7 @@ body {
   font-size: 18px;
   line-height: 1.38;
   /* text-align: center; */
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.02em;
   margin-top: 30px;
   margin-bottom: 8px;
@@ -613,7 +616,7 @@ body {
   font-size: 14px;
   line-height: 1.35;
   /* text-align: center; */
-  color: var(--accent-color);
+  color: $accent-color;
   letter-spacing: 0.02em;
   margin-bottom: 30px;
   text-align: center;
@@ -642,8 +645,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #ffffff;
-  color: var(--primary-color);
+  background-color: $second-color;
+  color: $primary-color;
 }
 
 /* .barber-soc-link:hover .barbers-soc-icons {
@@ -653,8 +656,8 @@ body {
 /* вариация фокуса на иконку и бегграунд */
 
 .barber-soc-link:hover {
-  background-color: #ffffff;
-  color: var(--accent-color);
+  background-color: $second-color;
+  color: $accent-color;
 }
 
 .barbers-soc-icons {
@@ -686,7 +689,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: $primary-color;
   margin-bottom: 44px;
 }
 
@@ -709,7 +712,7 @@ body {
 
 .contacts-wrap {
   display: flex;
-  background: #191c26;
+  background: $black-bg-color;
   background-image: url(../images/contacts-bg.png);
   background-repeat: no-repeat;
   background-position: center right calc(50% - 15px - 392px);
@@ -732,7 +735,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: var(--second-color);
+  color: $second-color;
   letter-spacing: 0.05em;
   margin-bottom: 44px;
 }
@@ -760,12 +763,12 @@ body {
 .form-input-item:focus,
 .form-input-item:hover {
   outline: transparent;
-  border-bottom-color: #ffffff;
+  border-bottom-color: $second-color;
 }
 
 .form-input-item:focus::placeholder,
 .form-input-item:hover::placeholder {
-  color: #ffffff;
+  color: $second-color;
 }
 
 .form-input-contact {
@@ -786,7 +789,7 @@ body {
 .form-btn {
   width: 160px;
   height: 40px;
-  border: 1px solid #ff6c00;
+  border: 1px solid $accent-color;
   border-radius: 25px;
   font-weight: 600;
   font-size: 12px;
@@ -794,7 +797,7 @@ body {
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $second-color;
 }
 
 /* <-----------contacts-----------> */
@@ -809,7 +812,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
-  color: var(--second-color);
+  color: $second-color;
   letter-spacing: 0.05em;
   margin-bottom: 40px;
 }
@@ -830,7 +833,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.66;
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.02em;
 }
 
@@ -838,7 +841,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.02em;
 }
 
@@ -847,7 +850,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   text-decoration-line: underline;
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.02em;
 }
 
@@ -856,7 +859,7 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: var(--second-color);
+  color: $second-color;
   margin-top: 70px;
   margin-bottom: 20px;
 }
@@ -865,7 +868,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.02em;
 }
 
@@ -880,7 +883,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: var(--text-second-color);
+  color: $text-second-color;
   letter-spacing: 0.2em;
   padding: 56px 0px;
   /* margin-left: auto; */
@@ -916,14 +919,14 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color: var(--primary-color);
+  color: $primary-color;
   letter-spacing: 0.2em;
   text-decoration: none;
 }
 
 .footer-link:hover,
 .footer-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* <-----------modal window-----------> */
@@ -948,7 +951,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   width: 500px;
   height: 700px;
-  background-color: #ffffff;
+  background-color: $second-color;
   border-radius: 5px;
   padding: 35px;
   transition: transform 500ms;
@@ -961,7 +964,7 @@ body {
   width: 30px;
   height: 30px;
   background-color: transparent;
-  border: 1px solid #999999;
+  border: 1px solid $text-second-color;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -978,7 +981,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.5;
-  color: #090b13;
+  color: $primary-color;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -993,33 +996,33 @@ body {
   height: 40px;
   padding-left: 40px;
   /* margin-bottom: 28px; */
-  background: #ffffff;
+  background: $second-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  color: #303030;
+  color: $primary-color;
   font-size: 14px;
   line-height: 1.2;
 }
 
 .modal-input::placeholder {
-  color: #ff6c00;
+  color: $accent-color;
   font-weight: 700;
 }
 
 .modal-input:required {
-  border-color: gray;
+  border-color: $text-second-color;
 }
 
 .modal-input:focus,
 .modal-input:hover {
-  border-color: #ff6c00;
+  border-color: $accent-color;
   outline: transparent;
 }
 
 .modal-input:focus + svg,
 .modal-input:hover + svg {
-  fill: #ff6c00;
+  fill: $accent-color;
 }
 
 .modal-input:not(:focus):not(:placeholder-shown):valid {
@@ -1031,7 +1034,7 @@ body {
 }
 
 input[type='radio']:checked + label {
-  color: #ff6c00;
+  color: $accent-color;
 }
 
 .modal-input-wrapper {
@@ -1050,7 +1053,7 @@ input[type='radio']:checked + label {
   width: 100%;
   height: 80px;
   max-height: 250px;
-  background: #ffffff;
+  background: $second-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1062,6 +1065,6 @@ input[type='radio']:checked + label {
 }
 
 .modal-text::placeholder {
-  color: #ff6c00;
+  color: $accent-color;
   font-weight: 700;
 }
