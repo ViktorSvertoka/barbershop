@@ -26,16 +26,24 @@
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item item">
-              <a href="" class="navigation__link link">About</a>
+              <a href="" class="navigation__link navigation__link--active link"
+                >About</a
+              >
             </li>
             <li class="navigation__item item">
-              <a href="" class="navigation__link link">Services and prices</a>
+              <a href="" class="navigation__link navigation__link--active link"
+                >Services and prices</a
+              >
             </li>
             <li class="navigation__item item">
-              <a href="" class="navigation__link link">Barbers</a>
+              <a href="" class="navigation__link navigation__link--active link"
+                >Barbers</a
+              >
             </li>
             <li class="navigation__item item">
-              <a href="" class="navigation__link link">Contacts</a>
+              <a href="" class="navigation__link navigation__link--active link"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
@@ -43,7 +51,11 @@
           <a href="tel:+380441111111" class="contact__tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="contact__btn" data-modal-open>
+          <button
+            type="button"
+            class="modal__open-btn modal__open-btn--active"
+            data-modal-open
+          >
             Online-booking
           </button>
         </div>
@@ -51,14 +63,14 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero__container">
+        <div class="hero__container container">
           <div class="social">
-            <ul class="social__list list">
+            <ul class="social__list social__list--static list">
               <li class="social__item item">
                 <a
                   href=""
                   rel="noopener noreferrer nofollow"
-                  class="social__link link"
+                  class="social__link social__link--active link"
                   >Instagram</a
                 >
               </li>
@@ -66,18 +78,18 @@
                 <a
                   href=""
                   rel="noopener noreferrer nofollow"
-                  class="social__link link"
+                  class="social__link social__link--active link"
                   >Youtube</a
                 >
               </li>
             </ul>
           </div>
-          <div class="combination">
-            <p class="combination__pre-title pre-title">
+          <div class="hero-desc">
+            <p class="hero-desc__pre-title pre-title">
               A hair salon for men in Kyiv
             </p>
-            <h1 class="combination__title title">BarberShop</h1>
-            <p class="combination__text">
+            <h1 class="hero-desc__title title">BarberShop</h1>
+            <p class="hero-desc__text">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -86,15 +98,15 @@
       </section>
       <section class="about">
         <div class="about__container container">
-          <ul class="about__list list">
-            <li class="about__item item">
+          <ul class="about__list about-img list">
+            <li class="about-img__item about-img__item--pseudo item">
               <img
                 src="./images/shaving1.jpg"
                 alt="barber shaving"
                 width="270"
               />
             </li>
-            <li class="about__item item">
+            <li class="about-img__item about-img__item--pseudo item">
               <img
                 src="./images/shaving2.jpg"
                 alt="barber cuts hair"
@@ -102,21 +114,26 @@
               />
             </li>
           </ul>
-          <div class="about__wrap">
-            <p class="about__pre-title pre-title">About</p>
-            <h2 class="about__title">Best Barbershop in your city</h2>
-            <p class="about__after-title">
+          <div class="about__wrap about-desc">
+            <p class="about-desc__pre-title pre-title">About</p>
+            <h2 class="about-desc__title">Best Barbershop in your city</h2>
+            <p class="about-desc__after-title">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
-            <p class="about__text">
+            <p class="about-desc__text">
               We are a team that never stops at what has been achieved and are
               thirsty for changes. And when you fall into the hands of our
               master, you will never be the same again. We are a team that is
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about__btn">ONLINE-BOOKING</button>
+            <button
+              type="button"
+              class="about-desc__btn about-desc__btn--active"
+            >
+              ONLINE-BOOKING
+            </button>
           </div>
         </div>
       </section>
@@ -127,72 +144,132 @@
           </p>
           <h2 class="prices__title">Services and prices</h2>
           <div class="prices__list-wrap">
-            <ul class="prices__list prices__list-left list">
-              <li class="prices__item item">
-                <p class="prices__elem">Men’s haircut</p>
-                <p class="prices__elem">from 300 uah.</p>
+            <ul class="prices__list-left prices-grid list">
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Men’s haircut
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 300 uah.
+                </p>
               </li>
-              <li class="prices__item item">
-                <p class="prices__elem">Beard trim</p>
-                <p class="prices__elem">from 300 uah.</p>
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Beard trim
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 300 uah.
+                </p>
               </li>
-              <li class="prices__item item">
-                <p class="prices__elem">Mustache trim</p>
-                <p class="prices__elem">from 200 uah.</p>
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Mustache trim
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 200 uah.
+                </p>
               </li>
-              <li class="prices__item item">
-                <p class="prices__elem">Straight razor shave</p>
-                <p class="prices__elem">from 200 uah.</p>
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Straight razor shave
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 200 uah.
+                </p>
               </li>
             </ul>
-            <ul class="prices__list prices__list-right list">
-              <li class="prices__item item">
-                <p class="prices__elem">Trainee’s haircut</p>
-                <p class="prices__elem">from 50 uah.</p>
+            <ul class="prices__list-right prices-grid list">
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Trainee’s haircut
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 50 uah.
+                </p>
               </li>
-              <li class="prices__item item">
-                <p class="prices__elem">Haircut under the nozzle</p>
-                <p class="prices__elem">from 200 uah.</p>
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Haircut under the nozzle
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 200 uah.
+                </p>
               </li>
-              <li class="prices__item item">
-                <p class="prices__elem">Children’s haircut (0-12 y.o.)</p>
-                <p class="prices__elem">from 300 uah.</p>
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Children’s haircut (0-12 y.o.)
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 300 uah.
+                </p>
               </li>
-              <li class="prices__item item">
-                <p class="prices__elem">Camouflage of gray hair</p>
-                <p class="prices__elem">from 200 uah.</p>
+              <li
+                class="prices-grid__item prices-grid__item--static prices-grid__item--pseudo item"
+              >
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  Camouflage of gray hair
+                </p>
+                <p class="prices-grid__elem prices-grid__elem--pseudo">
+                  from 200 uah.
+                </p>
               </li>
             </ul>
           </div>
           <button class="prices__button" type="button">online-booking</button>
         </div>
       </section>
-      <section class="benefits">
-        <div class="benefits__container container">
-          <div class="benefits__list-wrap">
-            <ul class="benefits__list list">
-              <li class="benefits__item item">
-                <span class="benefits__numbers">600</span>
-                <p class="benefits__text">Satisfied customers per day</p>
+      <section class="slogan">
+        <div class="slogan__container container">
+          <div class="slogan__list-wrap">
+            <ul class="slogan__list slogan-honor list">
+              <li class="slogan-honor__item slogan-honor__item--pseudo item">
+                <span
+                  class="slogan-honor__numbers slogan-honor__numbers--static"
+                  >600</span
+                >
+                <p class="slogan-honor__text">Satisfied customers per day</p>
               </li>
-              <li class="benefits__item item">
-                <span class="benefits__numbers">50</span>
-                <p class="benefits__text">Awards for excellent service</p>
+              <li class="slogan-honor__item slogan-honor__item--pseudo item">
+                <span
+                  class="slogan-honor__numbers slogan-honor__numbers--static"
+                  >50</span
+                >
+                <p class="slogan-honor__text">Awards for excellent service</p>
               </li>
-              <li class="benefits__item item">
-                <span class="benefits__numbers">20</span>
-                <p class="benefits__text">Kyiv’s best barbers</p>
+              <li class="slogan-honor__item slogan-honor__item--pseudo item">
+                <span
+                  class="slogan-honor__numbers slogan-honor__numbers--static"
+                  >20</span
+                >
+                <p class="slogan-honor__text">Kyiv’s best barbers</p>
               </li>
-              <li class="benefits__item item">
-                <span class="benefits__numbers">100</span>
-                <p class="benefits__text">Gifts for regular customers</p>
+              <li class="slogan-honor__item slogan-honor__item--pseudo item">
+                <span
+                  class="slogan-honor__numbers slogan-honor__numbers--static"
+                  >100</span
+                >
+                <p class="slogan-honor__text">Gifts for regular customers</p>
               </li>
             </ul>
           </div>
-          <div class="benefits__wrap">
-            <p class="benefits__pre-title pre-title">Old traditional school</p>
-            <h2 class="benefits__title">¿Why people come to us?</h2>
-            <p class="benefits__after-title">
+          <div class="slogan__wrap">
+            <p class="slogan__pre-title pre-title">Old traditional school</p>
+            <h2 class="slogan__title">¿Why people come to us?</h2>
+            <p class="slogan__after-title">
               Only good things are said about us. But it's better to see and
               feel 1 time than read 10 times.
             </p>
@@ -459,7 +536,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal__close" data-modal-close>
+        <button type="button" class="modal__close-btn" data-modal-close>
           <svg width="20" height="20" class="">
             <use href="./images/modal.svg#icon-modal-x"></use>
           </svg>

@@ -97,7 +97,7 @@ body {
 }
 
 /* можно еще так */
-/* .header-list li + li {
+/* .navigation__list li + li {
   margin-left: 30px;
 } */
 .navigation__link {
@@ -126,7 +126,7 @@ body {
   color: #ffffff;
 }
 
-.contact__btn {
+.modal__open-btn {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -141,8 +141,8 @@ body {
   height: 40px;
 }
 
-.contact__btn:hover,
-.contact__btn:focus {
+.modal__open-btn:hover,
+.modal__open-btn:focus {
   background: #ff6c00;
 }
 
@@ -188,7 +188,7 @@ body {
   color: #ff6c00;
 }
 
-.combination {
+.hero-desc {
   padding: 272px 526px 208px 100px;
   flex-grow: 1;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg.jpg);
@@ -199,7 +199,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.combination__pre-title {
+.hero-desc__pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -208,7 +208,7 @@ body {
   margin-bottom: 20px;
 }
 
-.combination__title {
+.hero-desc__title {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
@@ -217,7 +217,7 @@ body {
   margin-bottom: 20px;
 }
 
-.combination__text {
+.hero-desc__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -239,7 +239,7 @@ body {
   display: flex;
 }
 
-.about__item:not(:last-child) {
+.about-img__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -247,7 +247,7 @@ body {
   margin-left: 30px;
 }
 
-.about__pre-title {
+.about-desc__pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -256,7 +256,7 @@ body {
   margin-bottom: 20px;
 }
 
-.about__title {
+.about-desc__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
@@ -265,7 +265,7 @@ body {
   margin-bottom: 20px;
 }
 
-.about__after-title {
+.about-desc__after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -274,7 +274,7 @@ body {
   margin-bottom: 20px;
 }
 
-.about__text {
+.about-desc__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
@@ -283,7 +283,7 @@ body {
   margin-bottom: 42px;
 }
 
-.about__btn {
+.about-desc__btn {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -297,8 +297,8 @@ body {
   height: 40px;
 }
 
-.about__btn:hover,
-.about__btn:focus {
+.about-desc__btn:hover,
+.about-desc__btn:focus {
   color: #ffffff;
   background: #ff6c00;
 }
@@ -338,13 +338,6 @@ body {
   gap: 30px;
 }
 
-.prices__list {
-  /* border: solid tomato; */
-  padding: 30px 20px;
-  flex-grow: 1;
-  width: 570px;
-}
-
 .prices__list-left {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
@@ -353,18 +346,25 @@ body {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.prices__item {
+.prices-grid {
+  /* border: solid tomato; */
+  padding: 30px 20px;
+  flex-grow: 1;
+  width: 570px;
+}
+
+.prices-grid__item {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.prices__item:last-child {
+.prices-grid__item:last-child {
   margin-bottom: 0px;
 }
 
-.prices__item::after {
+.prices-grid__item::after {
   content: "";
   height: 1px;
   width: 60px;
@@ -373,7 +373,7 @@ body {
   margin: 0px 12px;
 }
 
-.prices__elem {
+.prices-grid__elem {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -382,7 +382,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.prices__elem:last-child {
+.prices-grid__elem:last-child {
   order: 1;
 }
 
@@ -403,26 +403,26 @@ body {
 }
 
 /* <-----------benefits-----------> */
-.benefits {
+.slogan {
   padding: 120px 0px;
 }
 
-.benefits__container {
+.slogan__container {
   display: flex;
 }
 
-.benefits__list-wrap {
+.slogan__list-wrap {
   width: calc(50% + 15px);
   padding-left: 100px;
 }
 
-.benefits__list {
+.slogan-honor__list {
   display: flex;
   flex-wrap: wrap;
   width: 370px;
 }
 
-.benefits__item {
+.slogan-honor__item {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
@@ -430,15 +430,15 @@ body {
   background: #f7f7f7;
 }
 
-.benefits__item:nth-child(2n+1) {
+.slogan-honor__item:nth-child(2n+1) {
   margin-right: 30px;
 }
 
-.benefits__item:nth-child(2n) {
+.slogan-honor__item:nth-child(2n) {
   margin-top: 30px;
 }
 
-.benefits__numbers {
+.slogan-honor__numbers {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
@@ -449,7 +449,7 @@ body {
   justify-content: center;
 }
 
-.benefits__numbers::after {
+.slogan-honor__numbers::after {
   content: "+";
   font-weight: 600;
   font-size: 16px;
@@ -458,7 +458,7 @@ body {
   color: #ff6c00;
 }
 
-.benefits__text {
+.slogan-honor__text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -466,13 +466,13 @@ body {
   color: #303030;
 }
 
-.benefits__wrap {
+.slogan__wrap {
   padding-top: 9px;
   padding-right: 70px;
   padding-left: 130px;
 }
 
-.benefits__pre-title {
+.slogan__pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -481,7 +481,7 @@ body {
   margin-bottom: 20px;
 }
 
-.benefits__title {
+.slogan__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
@@ -491,7 +491,7 @@ body {
   padding-right: 70px;
 }
 
-.benefits__after-title {
+.slogan__after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -930,7 +930,7 @@ body {
   transition: transform 500ms;
 }
 
-.modal__close {
+.modal__close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
