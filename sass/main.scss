@@ -124,11 +124,11 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: $second-color;
-}
 
-.header__link:hover,
-.header__link:focus {
-  color: $accent-color;
+  &--active:hover,
+  &--active:focus {
+    color: $accent-color;
+  }
 }
 
 .header__contact {
@@ -157,11 +157,11 @@ body {
   margin-left: 40px;
   min-width: 160px;
   height: 40px;
-}
 
-.header__button:hover,
-.header__button:focus {
-  background: $accent-color;
+  &--active:hover,
+  &--active:focus {
+    background: $accent-color;
+  }
 }
 
 /* <-----------main-----------> */
@@ -189,13 +189,13 @@ body {
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
   gap: 40px;
-}
 
-.hero__list::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  background: currentColor;
+  &--static::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: currentColor;
+  }
 }
 
 .hero__link {
@@ -204,11 +204,11 @@ body {
   line-height: 1.36;
   color: $primary-color;
   letter-spacing: 0.2em;
-}
 
-.hero__link:hover,
-.hero__link:focus {
-  color: $accent-color;
+  &--active:hover,
+  &--active:focus {
+    color: $accent-color;
+  }
 }
 
 .hero__wrap {
@@ -323,12 +323,12 @@ body {
   letter-spacing: 0.09em;
   min-width: 160px;
   height: 40px;
-}
 
-.about__button:hover,
-.about__button:focus {
-  color: $second-color;
-  background: $accent-color;
+  &--active:hover,
+  &--active:focus {
+    color: $second-color;
+    background: $accent-color;
+  }
 }
 
 /* <-----------services and prices-----------> */
@@ -389,19 +389,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
 
-.prices__item:last-child {
-  margin-bottom: 0px;
-}
+  &--pseudo:last-child {
+    margin-bottom: 0px;
+  }
 
-.prices__item::after {
-  content: '';
-  height: 1px;
-  width: 60px;
-  background: rgba(157, 164, 189, 0.12);
-  flex-grow: 1;
-  margin: 0px 12px;
+  &--static::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin: 0px 12px;
+  }
 }
 
 .prices__elem {
@@ -411,10 +411,10 @@ body {
   /* text-align: right; */
   color: $text-second-color;
   letter-spacing: 0.02em;
-}
 
-.prices__elem:last-child {
-  order: 1;
+  &--pseudo:last-child {
+    order: 1;
+  }
 }
 
 .prices__button {
@@ -462,14 +462,14 @@ body {
   text-align: center;
 
   background: $white-bg-color;
-}
 
-.slogan__item:nth-child(2n + 1) {
-  margin-right: 30px;
-}
+  &--pseudo:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 
-.slogan__item:nth-child(2n) {
-  margin-top: 30px;
+  &--pseudo:nth-child(2n) {
+    margin-top: 30px;
+  }
 }
 
 .slogan__numbers {
@@ -481,15 +481,15 @@ body {
   letter-spacing: 0.05em;
   display: flex;
   justify-content: center;
-}
 
-.slogan__numbers::after {
-  content: '+';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.37;
-  text-align: center;
-  color: $accent-color;
+  &--static::after {
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    text-align: center;
+    color: $accent-color;
+  }
 }
 
 .slogan__text {
@@ -564,6 +564,10 @@ body {
 }
 .barbers__item {
   width: calc((100% - 60px) / 3);
+
+  &--pseudo:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* можно еще так */
@@ -572,18 +576,16 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 } */
 
-.barbers__item:not(:last-child) {
-  margin-right: 30px;
-}
+.barbers__link {
+  &--active:hover .barbers__cover-text {
+    transform: translateY(0);
+    transition: transform 400ms linear;
+  }
 
-.barbers__link:hover .barbers__cover-text {
-  transform: translateY(0);
-  transition: transform 400ms linear;
-}
-
-.barbers__link:focus .barbers__cover-text {
-  transform: translateY(0);
-  transition: transform 400ms linear;
+  &--active:focus .barbers__cover-text {
+    transform: translateY(0);
+    transition: transform 400ms linear;
+  }
 }
 
 .barbers__thumb {
@@ -641,10 +643,10 @@ body {
   width: 44px;
   height: 44px;
   margin-right: 10px;
-}
 
-.barbers__soc-items:last-child {
-  margin-right: 0px;
+  &--pseudo:last-child {
+    margin-right: 0px;
+  }
 }
 
 .barber__soc-link {
@@ -656,6 +658,11 @@ body {
   border-radius: 50%;
   background-color: $second-color;
   color: $primary-color;
+
+  &--active:hover {
+    background-color: $second-color;
+    color: $accent-color;
+  }
 }
 
 /* .barber-soc-link:hover .barbers-soc-icons {
@@ -663,11 +670,6 @@ body {
 } */
 
 /* вариация фокуса на иконку и бегграунд */
-
-.barber__soc-link:hover {
-  background-color: $second-color;
-  color: $accent-color;
-}
 
 .barbers__soc-icons {
   fill: currentColor;
