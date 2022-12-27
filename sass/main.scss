@@ -104,11 +104,11 @@ body {
   display: block;
 }
 
-.navigation__list {
+.header__list {
   display: flex;
 }
 
-.navigation__item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -118,7 +118,7 @@ body {
   margin-left: 30px;
 } */
 
-.navigation__link {
+.header__link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -126,16 +126,16 @@ body {
   color: $second-color;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
+.header__link:hover,
+.header__link:focus {
   color: $accent-color;
 }
 
-.contact {
+.header__contact {
   margin-left: auto;
 }
 
-.contact__tel {
+.header__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -144,7 +144,7 @@ body {
   color: $second-color;
 }
 
-.modal__open-btn {
+.header__button {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -159,8 +159,8 @@ body {
   height: 40px;
 }
 
-.modal__open-btn:hover,
-.modal__open-btn:focus {
+.header__button:hover,
+.header__button:focus {
   background: $accent-color;
 }
 
@@ -175,7 +175,7 @@ body {
   display: flex;
 }
 
-.social {
+.hero__wrapper {
   width: 100px;
   display: flex;
   align-items: flex-end;
@@ -183,7 +183,7 @@ body {
   padding-bottom: 40px;
 }
 
-.social__list {
+.hero__list {
   display: flex;
   align-items: center;
   transform: rotate(-90deg) translateY(100%);
@@ -191,14 +191,14 @@ body {
   gap: 40px;
 }
 
-.social__list::before {
+.hero__list::before {
   content: '';
   width: 60px;
   height: 1px;
   background: currentColor;
 }
 
-.social__link {
+.hero__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -206,12 +206,12 @@ body {
   letter-spacing: 0.2em;
 }
 
-.social__link:hover,
-.social__link:focus {
+.hero__link:hover,
+.hero__link:focus {
   color: $accent-color;
 }
 
-.hero-desc {
+.hero__wrap {
   padding: 272px 526px 208px 100px;
   flex-grow: 1;
   background-image: linear-gradient(
@@ -226,7 +226,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero-desc__pre-title {
+.hero__pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -235,7 +235,7 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-desc__title {
+.hero__title {
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
@@ -244,7 +244,7 @@ body {
   margin-bottom: 20px;
 }
 
-.hero-desc__text {
+.hero__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -267,7 +267,7 @@ body {
   display: flex;
 }
 
-.about-img__item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -275,7 +275,7 @@ body {
   margin-left: 30px;
 }
 
-.about-desc__pre-title {
+.about__pre-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -284,7 +284,7 @@ body {
   margin-bottom: 20px;
 }
 
-.about-desc__title {
+.about__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
@@ -293,7 +293,7 @@ body {
   margin-bottom: 20px;
 }
 
-.about-desc__after-title {
+.about__after-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -302,7 +302,7 @@ body {
   margin-bottom: 20px;
 }
 
-.about-desc__text {
+.about__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
@@ -311,7 +311,7 @@ body {
   margin-bottom: 42px;
 }
 
-.about-desc__btn {
+.about__button {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -325,8 +325,8 @@ body {
   height: 40px;
 }
 
-.about-desc__btn:hover,
-.about-desc__btn:focus {
+.about__button:hover,
+.about__button:focus {
   color: $second-color;
   background: $accent-color;
 }
@@ -376,7 +376,7 @@ body {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
-.prices-grid {
+.prices__list {
   /* border: solid tomato; */
 
   padding: 30px 20px;
@@ -384,18 +384,18 @@ body {
   width: 570px;
 }
 
-.prices-grid__item {
+.prices__item {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.prices-grid__item:last-child {
+.prices__item:last-child {
   margin-bottom: 0px;
 }
 
-.prices-grid__item::after {
+.prices__item::after {
   content: '';
   height: 1px;
   width: 60px;
@@ -404,7 +404,7 @@ body {
   margin: 0px 12px;
 }
 
-.prices-grid__elem {
+.prices__elem {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.66;
@@ -413,7 +413,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.prices-grid__elem:last-child {
+.prices__elem:last-child {
   order: 1;
 }
 
@@ -444,18 +444,18 @@ body {
   display: flex;
 }
 
-.slogan__list-wrap {
+.slogan__wrapper {
   width: calc(50% + 15px);
   padding-left: 100px;
 }
 
-.slogan-honor__list {
+.slogan__list {
   display: flex;
   flex-wrap: wrap;
   width: 370px;
 }
 
-.slogan-honor__item {
+.slogan__item {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
@@ -464,15 +464,15 @@ body {
   background: $white-bg-color;
 }
 
-.slogan-honor__item:nth-child(2n + 1) {
+.slogan__item:nth-child(2n + 1) {
   margin-right: 30px;
 }
 
-.slogan-honor__item:nth-child(2n) {
+.slogan__item:nth-child(2n) {
   margin-top: 30px;
 }
 
-.slogan-honor__numbers {
+.slogan__numbers {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.35;
@@ -483,7 +483,7 @@ body {
   justify-content: center;
 }
 
-.slogan-honor__numbers::after {
+.slogan__numbers::after {
   content: '+';
   font-weight: 600;
   font-size: 16px;
@@ -492,7 +492,7 @@ body {
   color: $accent-color;
 }
 
-.slogan-honor__text {
+.slogan__text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -576,8 +576,14 @@ body {
   margin-right: 30px;
 }
 
-.barbers__item:hover .barbers-cover-text {
+.barbers__link:hover .barbers__cover-text {
   transform: translateY(0);
+  transition: transform 400ms linear;
+}
+
+.barbers__link:focus .barbers__cover-text {
+  transform: translateY(0);
+  transition: transform 400ms linear;
 }
 
 .barbers__thumb {
@@ -713,7 +719,7 @@ body {
 
 /* <-----------contact-wrap-----------> */
 
-.wrapper {
+.block-wrapper {
   display: flex;
   background: $black-bg-color;
   background-image: url(../images/contacts-bg.png);
@@ -722,7 +728,7 @@ body {
   background-size: auto 100%;
 }
 
-.wrapper__container {
+.block-wrapper__container {
   display: flex;
 }
 
@@ -789,7 +795,7 @@ body {
   color: $second-color;
 }
 
-.form__btn {
+.form__button {
   width: 160px;
   height: 40px;
   border: 1px solid $accent-color;
