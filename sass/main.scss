@@ -710,10 +710,10 @@ body {
 
 .gallery__item {
   margin-right: 30px;
-}
 
-.gallery__item:last-child {
-  margin-right: 0px;
+  &--pseudo:last-child {
+    margin-right: 0px;
+  }
 }
 
 .gallery__img {
@@ -754,10 +754,10 @@ body {
 .form__input {
   width: 270px;
   height: 24px;
-}
 
-.form__input:first-child {
-  margin-right: 30px;
+  &--pseudo:first-child {
+    margin-right: 30px;
+  }
 }
 
 .form__textarea {
@@ -778,23 +778,23 @@ body {
   margin-bottom: 44px;
   cursor: pointer;
   transition: border-bottom-color 500ms linear;
-}
 
-.form__styles::placeholder {
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.4);
-  transition: color 500ms linear;
-}
+  &--active::placeholder {
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 500ms linear;
+  }
 
-.form__styles:focus,
-.form__styles:hover {
-  outline: transparent;
-  border-bottom-color: $second-color;
-}
+  &--active:focus,
+  &--active:hover {
+    outline: transparent;
+    border-bottom-color: $second-color;
+  }
 
-.form__styles:focus::placeholder,
-.form__styles:hover::placeholder {
-  color: $second-color;
+  &--active:focus::placeholder,
+  &--active:hover::placeholder {
+    color: $second-color;
+  }
 }
 
 .form__button {
@@ -834,10 +834,10 @@ body {
 .contacts__item {
   font-style: normal;
   margin-bottom: 20px;
-}
 
-.contacts__item:last-child {
-  margin-bottom: 0px;
+  &--pseudo:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .contacts__address {
@@ -908,22 +908,22 @@ body {
 .footer__list {
   display: flex;
   align-items: center;
-}
 
-.footer__list::before {
-  content: '';
-  width: 60px;
-  height: 1px;
-  background: currentColor;
-  margin-right: 40px;
+  &--static::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: currentColor;
+    margin-right: 40px;
+  }
 }
 
 .footer__item {
   margin-left: 40px;
-}
 
-.footer__item:first-child {
-  margin-left: 0px;
+  &--pseudo:first-child {
+    margin-left: 0px;
+  }
 }
 
 .footer__link {
@@ -933,11 +933,11 @@ body {
   color: $primary-color;
   letter-spacing: 0.2em;
   text-decoration: none;
-}
 
-.footer__link:hover,
-.footer__link:focus {
-  color: $accent-color;
+  &--active:hover,
+  &--active:focus {
+    color: $accent-color;
+  }
 }
 
 /* <-----------modal window-----------> */
@@ -1014,34 +1014,34 @@ body {
   color: $primary-color;
   font-size: 14px;
   line-height: 1.2;
-}
 
-.modal__input::placeholder {
-  color: $accent-color;
-  font-weight: 700;
-}
+  &--attribute::placeholder {
+    color: $accent-color;
+    font-weight: 700;
+  }
 
-.modal__input:required {
-  border-color: $text-second-color;
-}
+  &--compulsory:required {
+    border-color: $text-second-color;
+  }
 
-.modal__input:focus,
-.modal__input:hover {
-  border-color: $accent-color;
-  outline: transparent;
-}
+  &--active:focus,
+  &--active:hover {
+    border-color: $accent-color;
+    outline: transparent;
+  }
 
-.modal__input:focus + svg,
-.modal__input:hover + svg {
-  fill: $accent-color;
-}
+  &--active:focus + svg,
+  &--active:hover + svg {
+    fill: $accent-color;
+  }
 
-.modal__input:not(:focus):not(:placeholder-shown):valid {
-  background-color: rgba(0, 255, 0, 0.2);
-}
+  &--pseudo:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(0, 255, 0, 0.2);
+  }
 
-.modal__input:not(:focus):not(:placeholder-shown):invalid {
-  background-color: rgba(255, 0, 0, 0.2);
+  &--pseudo:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
 }
 
 input[type='radio']:checked + label {
@@ -1073,9 +1073,9 @@ input[type='radio']:checked + label {
   line-height: 1.2;
   padding: 10px;
   padding-left: 40px;
-}
 
-.modal__text::placeholder {
-  color: $accent-color;
-  font-weight: 700;
+  &--attribute::placeholder {
+    color: $accent-color;
+    font-weight: 700;
+  }
 }
