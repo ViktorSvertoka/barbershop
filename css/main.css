@@ -28,6 +28,8 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -35,9 +37,9 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
+  width: 100%;
 }
 
 /* <-----------utils-----------> */
