@@ -40,8 +40,11 @@ button {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 body {
@@ -49,11 +52,21 @@ body {
 }
 
 .container {
-  // width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0px auto;
 
-  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 448px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 /* <-----------utils-----------> */
@@ -94,10 +107,10 @@ body {
 
 /* можно еще так */
 
-/* header .container {
-  display: flex;
-  align-items: center;
-} */
+// header .container {
+//   display: flex;
+//   align-items: center;
+// }
 
 .header__logo {
   padding: 32px 0px;
@@ -161,6 +174,7 @@ body {
   margin-left: 40px;
   min-width: 160px;
   height: 40px;
+  margin-right: 20px;
 
   &--active:hover,
   &--active:focus {
