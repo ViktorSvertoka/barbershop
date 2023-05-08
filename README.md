@@ -1,4 +1,7 @@
-barbershop
+# Barbershop
+
+- `Look at`
+  [**Layout (Figma)**](<https://www.figma.com/file/vnBxWNcvF8MYyDVhW7JN5c/Barbershop-EN-(Copy)?type=design&node-id=1374%3A694&t=yh4cqUxbtfpX9uPR-1>)
 
 ---
 
